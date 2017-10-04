@@ -1,0 +1,74 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical"
+    tools:context=".CompassActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Compass"
+        android:textColor="@color/fontcolor"
+        android:textSize="29sp"
+        android:visibility="visible" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Get Direction Across The Globe"
+        android:textColor="#b2bbcc"
+        android:textSize="17sp"
+        android:visibility="visible" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="40dp"
+        >
+
+        <TextView
+            android:id="@+id/degrees"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_vertical"
+            android:text="155 South East"
+            android:textColor="#b2bbcc"
+            android:textSize="40sp" />
+        <ImageView
+            android:id="@+id/main_image_dial"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:contentDescription="@string/compass_dial"
+            android:src="@drawable/readings" />
+
+        <ImageView
+            android:id="@+id/main_image_hands"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:contentDescription="@string/compass_hands"
+            android:scaleType="fitXY"
+            android:src="@drawable/needle" />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/magnetic_strenght1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/main_image_hands"
+        android:layout_marginTop="50dp"
+        android:text="asl;kfjasdl;fjasdkl;f" />
+
+</LinearLayout>
